@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  border: 1px solid black;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.left {
+  display: flex;
+
+  p {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+  }
+}
+
+.right > form {
+  display: flex;
+  gap: 20px;
+}
+
+.select-country {
+  display: flex;
+
+  select {
+    font-size: 18px;
+    width: 150px;
+    border-radius: 8px;
+    border: 1px solid black;
+    font-family: "Times New Roman", Times, serif;
+  }
+}
+
+.select-city {
+  display: flex;
+  gap: 5px;
+
+  input,
+  button {
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid black;
+    font-family: "Times New Roman", Times, serif;
+  }
+}
+
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  margin: 0 auto;
+  align-items: start;
+  gap: 50px;
+
+  padding: 25px 0;
+  div {
+    padding: 25px;
+    border-radius: 8px;
+  }
+}
+
+.weather-container {
+  text-align: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  border-radius: 10px;
+  width: 450px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 121px;
+  z-index: 1;
+}
+
+.weather-forecast-container {
+  text-align: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  border-radius: 10px;
+  width: fit-content;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.weather-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.weather-box {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 8px;
+
+  & p {
+    display: flex;
+    padding: 10px 0px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.icon {
+  font-size: 22px;
+  margin-right: 5px;
+}
+
+.date {
+  font-weight: bolder;
+}
+
+.location {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.temperature {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.feels-like {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.humidity,
+.condition,
+.wind-speed {
+  font-size: 16px;
+}
+
+.loading-text {
+  font-size: 18px;
+  font-style: italic;
+  opacity: 0.8;
+}
