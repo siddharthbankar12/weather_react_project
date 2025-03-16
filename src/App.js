@@ -13,7 +13,6 @@ const App = () => {
     <>
       <div className="container">
         <Navbar city={defaultData.city} country={defaultData.country} />
-
         <div className="dashboard-container">
           <CurrentData />
           <DailyData />

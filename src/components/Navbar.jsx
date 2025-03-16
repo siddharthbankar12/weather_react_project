@@ -3,7 +3,7 @@ import { FaSearch } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { currentLocation } from "../store/Location";
 
-const Navbar = ({ city, country }) => {
+const Navbar = (props) => {
   const dispatch = useDispatch();
 
   const countryList = {
@@ -30,8 +30,8 @@ const Navbar = ({ city, country }) => {
   };
 
   const [cityCountry, setCityCountry] = useState({
-    city: city,
-    country: country,
+    city: props.city,
+    country: props.country,
   });
 
   useEffect(() => {
